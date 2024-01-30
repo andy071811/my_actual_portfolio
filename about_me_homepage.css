@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+    text-transform: uppercase;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 2px solid black;
+
+}
+
+nav a {
+    font-size: xx-large;
+    font-weight: 100;
+    text-decoration: none;
+    width: 100%;
+    margin-right: 10%;
+    color: aliceblue;
+    text-shadow: 0 0 5px black;
+}
+
+/* ONLY HERE TO HELP SEE DIVS */
+
+/* div {
+    border: 2px solid red;
+} */
+
+.about-me-container {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 10px;
+}
+
+.about-me-header {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.intro {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: #918376;
+}
+
+.employment {
+    grid-column: 1 /span 1;
+    grid-row: 3 / span 1;
+    background-color: #918376;
+}
+
+.hobbies {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    background-color: #918376;
+}
+
+.about-me-img {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 3;
+    max-width: 100%;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.about-me-header h1 {
+    font-size: 4em;
+    margin-top: 5%;
+    letter-spacing: 3px;
+    color: aliceblue;
+    background-color: #918376;
+    border: 2px solid black;
+}
+
+.intro h3,
+.employment h3,
+.hobbies h3 {
+    background-color: lightslategray;
+    color: aliceblue;
+    letter-spacing: 2px;
+    height: 40px;
+    border: 2px solid black;
+    padding-top: 10px;
+}
+
+.intro p,
+.employment p,
+.hobbies p {
+    background-color: #918376;
+    color: aliceblue;
+    padding: 10px;
+}
+
