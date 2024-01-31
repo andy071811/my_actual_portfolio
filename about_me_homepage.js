@@ -10,6 +10,20 @@ let hobbiesP = document.getElementById('hobbies');
 
 // the functions
 
+function myFunction(x) {
+    if (x.matches) {
+        introP.hidden, employmentP.hidden, hobbiesP.hidden = false;
+    } else {
+        introP.hidden, employmentP.hidden, hobbiesP.hidden = true;
+    }
+};
+
+var x = window.matchMedia("(max-width: 800px)");
+
+x.addEventListener("change", function() {
+    myFunction(x);
+});
+
 // ABOUT ME GRID
 
 introP.hidden = true;

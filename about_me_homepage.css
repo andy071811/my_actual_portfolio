@@ -6,6 +6,8 @@
     font-family: "Pathway Gothic One", sans-serif;
 }
 
+/* NAV */
+
 nav {
     width: 100%;
     background-color: rgb(215, 215, 215);
@@ -23,7 +25,8 @@ nav a {
     font-weight: 100;
     text-decoration: none;
     width: 100%;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
     color: aliceblue;
     text-shadow: 0 0 5px black;
 }
@@ -37,6 +40,8 @@ nav a:hover {
 /* div {
     border: 2px solid red;
 } */
+
+/* MAIN CONTAINER */
 
 .about-me-container {
     text-align: center;
@@ -109,3 +114,58 @@ nav a:hover {
     padding: 10px;
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-header {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .intro {
+        grid-column: 1 / span 2;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .employment {
+        grid-column: 1 / span 2;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hobbies {
+        grid-column: 1 / span 2;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-header h1 { 
+        font-size: x-large;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-img {
+        display: none;
+    }
+}
